@@ -61,7 +61,7 @@ LIMIT 3;
 """
 most_popular_memes_minioURL = conn.query(most_popular_memes_query, ttl="10m")
 
-client = Minio("localhost:9000",
+client = Minio("minio:9000",
     access_key="minioadmin",
     secret_key="minioadmin",
     secure=False
